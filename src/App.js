@@ -9,7 +9,7 @@ import './App.css';
 import HomePage from './containers/homepage/HomePage';
 import ShopPage from './containers/shop page/shoppage';
 import SignInAndSignUpPage from './containers/sign-in-and-sign-up/sign-in-and-sign-up';
-// import CheckoutPage from './containers/checkout/checkout';
+import CheckoutPage from './containers/checkout/checkout';
 
 import Header from './components/header/header';
 
@@ -51,7 +51,7 @@ class App extends React.Component {
         <Switch>
           <Route exact path='/' component={HomePage} />
           <Route path='/shop' component={ShopPage} />
-          {/* <Route exact path='/checkout' component={CheckoutPage} /> */}
+          <Route exact path='/checkout' component={CheckoutPage} />
           <Route exact path='/signin' render={() => this.props.currentUser ? ( <Redirect to='/' /> ) : ( <SignInAndSignUpPage /> )}/>
         </Switch>
       </div>
