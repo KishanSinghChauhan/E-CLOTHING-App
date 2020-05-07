@@ -2,7 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-const config = {
+const config =  {
   apiKey: "AIzaSyB5_6Ht7LKel07tZ4Q-OyhxYaoL74WX1XE",
   authDomain: "e-clothing-db-e7967.firebaseapp.com",
   databaseURL: "https://e-clothing-db-e7967.firebaseio.com",
